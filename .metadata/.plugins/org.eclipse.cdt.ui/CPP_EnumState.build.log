@@ -1,0 +1,10 @@
+22:54:18 **** Incremental Build of configuration Debug for project CPP_EnumState ****
+make -j8 all 
+arm-none-eabi-size   CPP_EnumState.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 177488	   1096	   9076	 187660	  2dd0c	CPP_EnumState.elf
+Finished building: default.size.stdout
+ 
+
+22:54:19 Build Finished. 0 errors, 0 warnings. (took 217ms)
+

@@ -1,0 +1,10 @@
+21:56:53 **** Incremental Build of configuration Debug for project C_Blinky_Delay_not_Blocking1 ****
+make -j8 all 
+arm-none-eabi-size   C_Blinky_Delay_not_Blocking1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17320	    340	   3308	  20968	   51e8	C_Blinky_Delay_not_Blocking1.elf
+Finished building: default.size.stdout
+ 
+
+21:56:53 Build Finished. 0 errors, 0 warnings. (took 333ms)
+
