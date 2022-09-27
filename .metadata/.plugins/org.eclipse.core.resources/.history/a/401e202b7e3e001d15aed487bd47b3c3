@@ -1,0 +1,17 @@
+/*
+ * BlinkingLed.h
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#ifndef SRC_BLINKINGLED_H_
+#define SRC_BLINKINGLED_H_
+
+class BlinkingLed {
+public:
+	BlinkingLed();
+	virtual ~BlinkingLed();
+};
+
+#endif /* SRC_BLINKINGLED_H_ */

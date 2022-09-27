@@ -1,0 +1,35 @@
+/*
+ * NoneBlockSystemTickDelay.h
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#ifndef SRC_NONEBLOCKSYSTEMTICKDELAY_H_
+#define SRC_NONEBLOCKSYSTEMTICKDELAY_H_
+
+#include "BlinkingLed.h"
+
+class NoneBlockSystemTickDelay: public BlinkingLed {
+protected:
+	DelayNoneBlocking_wait uint32_t;
+	DelayNoneBlocking_tickstart uint32_t;
+public:
+	NoneBlockSystemTickDelay();
+	virtual ~NoneBlockSystemTickDelay();
+
+	void DelayNonBlocking_Init(uint32_t Delay) {
+		DelayNoneBlocking_tickstart = HAL_GetTick();
+		wait = Delay;
+	}
+
+	uint8_t DelayNonBlocking_CheckExpiration() {
+		// TODO
+		if(HAL_GetTick() - INTERVALL > last_time)
+		{
+
+		}
+	}
+};
+
+#endif /* SRC_NONEBLOCKSYSTEMTICKDELAY_H_ */
