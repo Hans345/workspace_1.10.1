@@ -1,1 +1,3 @@
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc/BlinkingLed.h:33:7:void BlinkingLed::setDutyCycle(uint8_t)	24	static
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc/BlinkingLed.h:39:7:void BlinkingLed::setFrequency(float_t)	24	static
 ../Core_CPP/Src/cpp_main.cpp:7:6:void cpp_main()	104	static

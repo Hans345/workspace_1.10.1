@@ -1,4 +1,4 @@
 ../Core_CPP/Src/BlinkingLed.cpp:17:1:BlinkingLed::~BlinkingLed()	8	static
 ../Core_CPP/Src/BlinkingLed.cpp:17:1:virtual BlinkingLed::~BlinkingLed()	8	static
 ../Core_CPP/Src/BlinkingLed.cpp:10:1:BlinkingLed::BlinkingLed(GPIO_TypeDef*, uint16_t, float_t, uint16_t)	32	static
-../Core_CPP/Src/BlinkingLed.cpp:20:6:void BlinkingLed::processBlinking()	8	static
+../Core_CPP/Src/BlinkingLed.cpp:20:12:const void BlinkingLed::processBlinking()	8	static

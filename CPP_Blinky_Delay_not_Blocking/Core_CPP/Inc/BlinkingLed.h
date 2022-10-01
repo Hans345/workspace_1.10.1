@@ -28,14 +28,19 @@ public:
 			    uint16_t aDutyCycle=50);
 	virtual ~BlinkingLed();
 
-	void processBlinking();
+	const void processBlinking();
 
-	void setDutyCycle(uint8_t dutyCycle) {
+	void setDutyCycle(uint16_t dutyCycle) {
+		// ToDo DutyCycle possible mit dem gegebenen Klassendiagramm?
 		DutyCycle = dutyCycle;
+		// uint32_t Delay = uint32_t((1000.0/Frequency)*(DutyCycle/100.0)); //in ms
+		// NoneBlockSystemTickDelay::DelayNonBlocking_Init(Delay);
 	}
 
 	void setFrequency(float_t frequency) {
 		Frequency = frequency;
+		uint32_t Delay = uint32_t((1000.0/Frequency)*(DutyCycle/100.0)); //in ms
+		NoneBlockSystemTickDelay::DelayNonBlocking_Init(Delay);
 	}
 };
 

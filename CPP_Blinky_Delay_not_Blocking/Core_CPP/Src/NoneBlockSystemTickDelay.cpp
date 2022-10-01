@@ -8,11 +8,10 @@
 #include "NoneBlockSystemTickDelay.h"
 
 myHal::NoneBlockSystemTickDelay::NoneBlockSystemTickDelay() {
-	// TODO Auto-generated constructor stub
 
 }
 
 myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
-	// TODO Auto-generated destructor stub
+
 }
 

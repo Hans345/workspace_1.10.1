@@ -1,21 +1,20 @@
-08:54:21 **** Incremental Build of configuration Release for project CPP_Blinky_Delay_not_Blocking ****
+09:57:58 **** Incremental Build of configuration Release for project CPP_Blinky_Delay_not_Blocking ****
 make -j8 all 
-arm-none-eabi-g++ "../Core_CPP/Src/STM32H7Led.cpp" -mcpu=cortex-m7 -std=gnu++14 -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/STM32H7Led.d" -MT"Core_CPP/Src/STM32H7Led.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/STM32H7Led.o"
+arm-none-eabi-g++ "../Core_CPP/Src/cpp_main.cpp" -mcpu=cortex-m7 -std=gnu++14 -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/cpp_main.d" -MT"Core_CPP/Src/cpp_main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/cpp_main.o"
 arm-none-eabi-g++ -o "CPP_Blinky_Delay_not_Blocking.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Blinky_Delay_not_Blocking\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_Blinky_Delay_not_Blocking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: CPP_Blinky_Delay_not_Blocking.elf
  
 arm-none-eabi-size   CPP_Blinky_Delay_not_Blocking.elf 
 arm-none-eabi-objdump -h -S  CPP_Blinky_Delay_not_Blocking.elf  > "CPP_Blinky_Delay_not_Blocking.list"
    text	   data	    bss	    dec	    hex	filename
-  14936	    440	   3256	  18632	   48c8	CPP_Blinky_Delay_not_Blocking.elf
+  15156	    440	   3256	  18852	   49a4	CPP_Blinky_Delay_not_Blocking.elf
 Finished building: default.size.stdout
  
 Finished building: CPP_Blinky_Delay_not_Blocking.list
  
-08:55:42 **** Incremental Build of configuration Debug for project CPP_Blinky_Delay_not_Blocking ****
+09:58:02 **** Incremental Build of configuration Debug for project CPP_Blinky_Delay_not_Blocking ****
 make -j8 all 
 arm-none-eabi-g++ "../Core_CPP/Src/BlinkingLed.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/BlinkingLed.d" -MT"Core_CPP/Src/BlinkingLed.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/BlinkingLed.o"
-arm-none-eabi-g++ "../Core_CPP/Src/NoneBlockSystemTickDelay.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/NoneBlockSystemTickDelay.d" -MT"Core_CPP/Src/NoneBlockSystemTickDelay.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/NoneBlockSystemTickDelay.o"
 arm-none-eabi-g++ "../Core_CPP/Src/STM32H7Led.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/STM32H7Led.d" -MT"Core_CPP/Src/STM32H7Led.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/STM32H7Led.o"
 arm-none-eabi-g++ "../Core_CPP/Src/cpp_main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/cpp_main.d" -MT"Core_CPP/Src/cpp_main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/cpp_main.o"
 arm-none-eabi-g++ -o "CPP_Blinky_Delay_not_Blocking.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Blinky_Delay_not_Blocking\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_Blinky_Delay_not_Blocking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -24,7 +23,29 @@ Finished building target: CPP_Blinky_Delay_not_Blocking.elf
 arm-none-eabi-size   CPP_Blinky_Delay_not_Blocking.elf 
 arm-none-eabi-objdump -h -S  CPP_Blinky_Delay_not_Blocking.elf  > "CPP_Blinky_Delay_not_Blocking.list"
    text	   data	    bss	    dec	    hex	filename
-  21632	    440	   3256	  25328	   62f0	CPP_Blinky_Delay_not_Blocking.elf
+  21960	    440	   3256	  25656	   6438	CPP_Blinky_Delay_not_Blocking.elf
+Finished building: default.size.stdout
+ 
+Finished building: CPP_Blinky_Delay_not_Blocking.list
+ 
+09:59:21 **** Incremental Build of configuration Debug for project CPP_Blinky_Delay_not_Blocking ****
+make -j8 all 
+arm-none-eabi-size   CPP_Blinky_Delay_not_Blocking.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21960	    440	   3256	  25656	   6438	CPP_Blinky_Delay_not_Blocking.elf
+Finished building: default.size.stdout
+ 
+10:00:31 **** Incremental Build of configuration Debug for project CPP_Blinky_Delay_not_Blocking ****
+make -j8 all 
+arm-none-eabi-g++ "../Core_CPP/Src/BlinkingLed.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/BlinkingLed.d" -MT"Core_CPP/Src/BlinkingLed.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/BlinkingLed.o"
+arm-none-eabi-g++ "../Core_CPP/Src/cpp_main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Blinky_Delay_not_Blocking/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/cpp_main.d" -MT"Core_CPP/Src/cpp_main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/cpp_main.o"
+arm-none-eabi-g++ -o "CPP_Blinky_Delay_not_Blocking.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Blinky_Delay_not_Blocking\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_Blinky_Delay_not_Blocking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: CPP_Blinky_Delay_not_Blocking.elf
+ 
+arm-none-eabi-size   CPP_Blinky_Delay_not_Blocking.elf 
+arm-none-eabi-objdump -h -S  CPP_Blinky_Delay_not_Blocking.elf  > "CPP_Blinky_Delay_not_Blocking.list"
+   text	   data	    bss	    dec	    hex	filename
+  21956	    440	   3256	  25652	   6434	CPP_Blinky_Delay_not_Blocking.elf
 Finished building: default.size.stdout
  
 Finished building: CPP_Blinky_Delay_not_Blocking.list
