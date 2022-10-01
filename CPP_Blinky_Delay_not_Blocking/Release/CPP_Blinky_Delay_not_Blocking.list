@@ -1639,9 +1639,9 @@ Disassembly of section .text:
  80012f6:	4604      	mov	r4, r0
  80012f8:	6002      	str	r2, [r0, #0]
  80012fa:	f840 3f0c 	str.w	r3, [r0, #12]!
- 80012fe:	f000 f879 	bl	80013f4 <_ZN10STM32H7LedD1Ev>
+ 80012fe:	f000 f879 	bl	80013f4 <_ZN5myHal10STM32H7LedD1Ev>
  8001302:	4620      	mov	r0, r4
- 8001304:	f000 f867 	bl	80013d6 <_ZN24NoneBlockSystemTickDelayD1Ev>
+ 8001304:	f000 f867 	bl	80013d6 <_ZN5myHal24NoneBlockSystemTickDelayD1Ev>
  8001308:	4620      	mov	r0, r4
  800130a:	bd10      	pop	{r4, pc}
  800130c:	08003988 	.word	0x08003988
@@ -1670,10 +1670,10 @@ Disassembly of section .text:
  8001338:	ee10 5a10 	vmov	r5, s0
  800133c:	461e      	mov	r6, r3
  800133e:	e9cd 2100 	strd	r2, r1, [sp]
- 8001342:	f000 f851 	bl	80013e8 <_ZN24NoneBlockSystemTickDelayC1Ev>
+ 8001342:	f000 f851 	bl	80013e8 <_ZN5myHal24NoneBlockSystemTickDelayC1Ev>
  8001346:	f104 000c 	add.w	r0, r4, #12
  800134a:	e9dd 2100 	ldrd	r2, r1, [sp]
- 800134e:	f000 f859 	bl	8001404 <_ZN10STM32H7LedC1EP12GPIO_TypeDeft>
+ 800134e:	f000 f859 	bl	8001404 <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft>
  8001352:	4b14      	ldr	r3, [pc, #80]	; (80013a4 <_ZN11BlinkingLedC1EP12GPIO_TypeDeftft+0x70>)
  8001354:	83a6      	strh	r6, [r4, #28]
  8001356:	4630      	mov	r0, r6
@@ -1728,10 +1728,10 @@ Disassembly of section .text:
  80013d0:	f000 bba5 	b.w	8001b1e <HAL_GPIO_TogglePin>
  80013d4:	bd10      	pop	{r4, pc}
 
-080013d6 <_ZN24NoneBlockSystemTickDelayD1Ev>:
+080013d6 <_ZN5myHal24NoneBlockSystemTickDelayD1Ev>:
  80013d6:	4770      	bx	lr
 
-080013d8 <_ZN24NoneBlockSystemTickDelayD0Ev>:
+080013d8 <_ZN5myHal24NoneBlockSystemTickDelayD0Ev>:
  80013d8:	b510      	push	{r4, lr}
  80013da:	4604      	mov	r4, r0
  80013dc:	210c      	movs	r1, #12
@@ -1740,17 +1740,17 @@ Disassembly of section .text:
  80013e4:	bd10      	pop	{r4, pc}
 	...
 
-080013e8 <_ZN24NoneBlockSystemTickDelayC1Ev>:
- 80013e8:	4b01      	ldr	r3, [pc, #4]	; (80013f0 <_ZN24NoneBlockSystemTickDelayC1Ev+0x8>)
+080013e8 <_ZN5myHal24NoneBlockSystemTickDelayC1Ev>:
+ 80013e8:	4b01      	ldr	r3, [pc, #4]	; (80013f0 <_ZN5myHal24NoneBlockSystemTickDelayC1Ev+0x8>)
  80013ea:	6003      	str	r3, [r0, #0]
  80013ec:	4770      	bx	lr
  80013ee:	bf00      	nop
  80013f0:	080039b0 	.word	0x080039b0
 
-080013f4 <_ZN10STM32H7LedD1Ev>:
+080013f4 <_ZN5myHal10STM32H7LedD1Ev>:
  80013f4:	4770      	bx	lr
 
-080013f6 <_ZN10STM32H7LedD0Ev>:
+080013f6 <_ZN5myHal10STM32H7LedD0Ev>:
  80013f6:	b510      	push	{r4, lr}
  80013f8:	4604      	mov	r4, r0
  80013fa:	210c      	movs	r1, #12
@@ -1758,9 +1758,9 @@ Disassembly of section .text:
  8001400:	4620      	mov	r0, r4
  8001402:	bd10      	pop	{r4, pc}
 
-08001404 <_ZN10STM32H7LedC1EP12GPIO_TypeDeft>:
+08001404 <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft>:
  8001404:	b510      	push	{r4, lr}
- 8001406:	4c02      	ldr	r4, [pc, #8]	; (8001410 <_ZN10STM32H7LedC1EP12GPIO_TypeDeft+0xc>)
+ 8001406:	4c02      	ldr	r4, [pc, #8]	; (8001410 <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft+0xc>)
  8001408:	8102      	strh	r2, [r0, #8]
  800140a:	e9c0 4100 	strd	r4, r1, [r0]
  800140e:	bd10      	pop	{r4, pc}

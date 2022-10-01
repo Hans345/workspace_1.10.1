@@ -17,7 +17,7 @@
 #include "NoneBlockSystemTickDelay.h"
 #include "STM32H7Led.h"
 
-class BlinkingLed: public myHal::NoneBlockSystemTickDelay, public myHal::STM32H7Led {
+class BlinkingLed: public NoneBlockSystemTickDelay, public STM32H7Led {
 private:
 	float_t Frequency;
 	uint16_t DutyCycle;

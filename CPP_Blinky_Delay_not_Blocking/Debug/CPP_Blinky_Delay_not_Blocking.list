@@ -31,23 +31,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  13 .ARM.attributes 00000030  00000000  00000000  000201b0  2**0
                   CONTENTS, READONLY
- 14 .debug_info   00015e68  00000000  00000000  000201e0  2**0
+ 14 .debug_info   00015e8b  00000000  00000000  000201e0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_abbrev 00002d11  00000000  00000000  00036048  2**0
+ 15 .debug_abbrev 00002d47  00000000  00000000  0003606b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_aranges 00000e30  00000000  00000000  00038d60  2**3
+ 16 .debug_aranges 00000e30  00000000  00000000  00038db8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_ranges 00000d08  00000000  00000000  00039b90  2**3
+ 17 .debug_ranges 00000d08  00000000  00000000  00039be8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_macro  0002b547  00000000  00000000  0003a898  2**0
+ 18 .debug_macro  0002b547  00000000  00000000  0003a8f0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line   000135e3  00000000  00000000  00065ddf  2**0
+ 19 .debug_line   000135e3  00000000  00000000  00065e37  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    000f42f2  00000000  00000000  000793c2  2**0
+ 20 .debug_str    000f4354  00000000  00000000  0007941a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .comment      00000050  00000000  00000000  0016d6b4  2**0
+ 21 .comment      00000050  00000000  00000000  0016d76e  2**0
                   CONTENTS, READONLY
- 22 .debug_frame  000041d8  00000000  00000000  0016d704  2**2
+ 22 .debug_frame  000041d8  00000000  00000000  0016d7c0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -2766,7 +2766,7 @@ Infinite_Loop:
   b  Infinite_Loop
  8001664:	e7fe      	b.n	8001664 <ADC_IRQHandler>
 
-08001666 <_ZN24NoneBlockSystemTickDelay21DelayNonBlocking_InitEm>:
+08001666 <_ZN5myHal24NoneBlockSystemTickDelay21DelayNonBlocking_InitEm>:
 	uint32_t DelayNoneBlocking_tickstart; 	// last_time
 public:
 	NoneBlockSystemTickDelay();
@@ -2793,7 +2793,7 @@ public:
  8001684:	46bd      	mov	sp, r7
  8001686:	bd80      	pop	{r7, pc}
 
-08001688 <_ZN24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv>:
+08001688 <_ZN5myHal24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv>:
 
 	uint8_t DelayNonBlocking_CheckExpiration() {
  8001688:	b580      	push	{r7, lr}
@@ -2816,7 +2816,7 @@ public:
  80016a6:	2300      	movls	r3, #0
  80016a8:	b2db      	uxtb	r3, r3
  80016aa:	2b00      	cmp	r3, #0
- 80016ac:	d006      	beq.n	80016bc <_ZN24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv+0x34>
+ 80016ac:	d006      	beq.n	80016bc <_ZN5myHal24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv+0x34>
 		{
 			DelayNoneBlocking_tickstart = HAL_GetTick();
  80016ae:	f000 f9b5 	bl	8001a1c <HAL_GetTick>
@@ -2825,7 +2825,7 @@ public:
  80016b6:	609a      	str	r2, [r3, #8]
 			return 1;
  80016b8:	2301      	movs	r3, #1
- 80016ba:	e000      	b.n	80016be <_ZN24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv+0x36>
+ 80016ba:	e000      	b.n	80016be <_ZN5myHal24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv+0x36>
 		}
 		else
 		{
@@ -2838,7 +2838,7 @@ public:
  80016c2:	46bd      	mov	sp, r7
  80016c4:	bd80      	pop	{r7, pc}
 
-080016c6 <_ZN10STM32H7Led9toggleLEDEv>:
+080016c6 <_ZN5myHal10STM32H7Led9toggleLEDEv>:
 public:
 	STM32H7Led(GPIO_TypeDef* aPort,
 			   uint16_t aPin);
@@ -2886,13 +2886,13 @@ BlinkingLed::BlinkingLed(GPIO_TypeDef *aPort, uint16_t aPin, float_t aFrequency,
 STM32H7Led(aPort, aPin), Frequency(aFrequency), DutyCycle(aDutyCycle)
  8001702:	68fb      	ldr	r3, [r7, #12]
  8001704:	4618      	mov	r0, r3
- 8001706:	f000 f899 	bl	800183c <_ZN24NoneBlockSystemTickDelayC1Ev>
+ 8001706:	f000 f899 	bl	800183c <_ZN5myHal24NoneBlockSystemTickDelayC1Ev>
  800170a:	68fb      	ldr	r3, [r7, #12]
  800170c:	330c      	adds	r3, #12
  800170e:	88fa      	ldrh	r2, [r7, #6]
  8001710:	68b9      	ldr	r1, [r7, #8]
  8001712:	4618      	mov	r0, r3
- 8001714:	f000 f8c2 	bl	800189c <_ZN10STM32H7LedC1EP12GPIO_TypeDeft>
+ 8001714:	f000 f8c2 	bl	800189c <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft>
  8001718:	4a1d      	ldr	r2, [pc, #116]	; (8001790 <_ZN11BlinkingLedC1EP12GPIO_TypeDeftft+0xa8>)
  800171a:	68fb      	ldr	r3, [r7, #12]
  800171c:	601a      	str	r2, [r3, #0]
@@ -2940,7 +2940,7 @@ STM32H7Led(aPort, aPin), Frequency(aFrequency), DutyCycle(aDutyCycle)
  800177a:	68fb      	ldr	r3, [r7, #12]
  800177c:	6979      	ldr	r1, [r7, #20]
  800177e:	4618      	mov	r0, r3
- 8001780:	f7ff ff71 	bl	8001666 <_ZN24NoneBlockSystemTickDelay21DelayNonBlocking_InitEm>
+ 8001780:	f7ff ff71 	bl	8001666 <_ZN5myHal24NoneBlockSystemTickDelay21DelayNonBlocking_InitEm>
 }
  8001784:	68fb      	ldr	r3, [r7, #12]
  8001786:	4618      	mov	r0, r3
@@ -2969,10 +2969,10 @@ BlinkingLed::~BlinkingLed() {
  80017b4:	687b      	ldr	r3, [r7, #4]
  80017b6:	330c      	adds	r3, #12
  80017b8:	4618      	mov	r0, r3
- 80017ba:	f000 f889 	bl	80018d0 <_ZN10STM32H7LedD1Ev>
+ 80017ba:	f000 f889 	bl	80018d0 <_ZN5myHal10STM32H7LedD1Ev>
  80017be:	687b      	ldr	r3, [r7, #4]
  80017c0:	4618      	mov	r0, r3
- 80017c2:	f000 f84b 	bl	800185c <_ZN24NoneBlockSystemTickDelayD1Ev>
+ 80017c2:	f000 f84b 	bl	800185c <_ZN5myHal24NoneBlockSystemTickDelayD1Ev>
 }
  80017c6:	687b      	ldr	r3, [r7, #4]
  80017c8:	4618      	mov	r0, r3
@@ -3024,7 +3024,7 @@ void BlinkingLed::processBlinking() {
 	if(NoneBlockSystemTickDelay::DelayNonBlocking_CheckExpiration())
  8001810:	687b      	ldr	r3, [r7, #4]
  8001812:	4618      	mov	r0, r3
- 8001814:	f7ff ff38 	bl	8001688 <_ZN24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv>
+ 8001814:	f7ff ff38 	bl	8001688 <_ZN5myHal24NoneBlockSystemTickDelay32DelayNonBlocking_CheckExpirationEv>
  8001818:	4603      	mov	r3, r0
  800181a:	2b00      	cmp	r3, #0
  800181c:	bf14      	ite	ne
@@ -3038,7 +3038,7 @@ void BlinkingLed::processBlinking() {
  8001828:	687b      	ldr	r3, [r7, #4]
  800182a:	330c      	adds	r3, #12
  800182c:	4618      	mov	r0, r3
- 800182e:	f7ff ff4a 	bl	80016c6 <_ZN10STM32H7Led9toggleLEDEv>
+ 800182e:	f7ff ff4a 	bl	80016c6 <_ZN5myHal10STM32H7Led9toggleLEDEv>
 	}
 }
  8001832:	bf00      	nop
@@ -3047,18 +3047,18 @@ void BlinkingLed::processBlinking() {
  8001838:	bd80      	pop	{r7, pc}
 	...
 
-0800183c <_ZN24NoneBlockSystemTickDelayC1Ev>:
+0800183c <_ZN5myHal24NoneBlockSystemTickDelayC1Ev>:
  *      Author: raphael.baumeler
  */
 
 #include "NoneBlockSystemTickDelay.h"
 
-NoneBlockSystemTickDelay::NoneBlockSystemTickDelay() {
+myHal::NoneBlockSystemTickDelay::NoneBlockSystemTickDelay() {
  800183c:	b480      	push	{r7}
  800183e:	b083      	sub	sp, #12
  8001840:	af00      	add	r7, sp, #0
  8001842:	6078      	str	r0, [r7, #4]
- 8001844:	4a04      	ldr	r2, [pc, #16]	; (8001858 <_ZN24NoneBlockSystemTickDelayC1Ev+0x1c>)
+ 8001844:	4a04      	ldr	r2, [pc, #16]	; (8001858 <_ZN5myHal24NoneBlockSystemTickDelayC1Ev+0x1c>)
  8001846:	687b      	ldr	r3, [r7, #4]
  8001848:	601a      	str	r2, [r3, #0]
 	// TODO Auto-generated constructor stub
@@ -3072,14 +3072,14 @@ NoneBlockSystemTickDelay::NoneBlockSystemTickDelay() {
  8001856:	4770      	bx	lr
  8001858:	080053fc 	.word	0x080053fc
 
-0800185c <_ZN24NoneBlockSystemTickDelayD1Ev>:
+0800185c <_ZN5myHal24NoneBlockSystemTickDelayD1Ev>:
 
-NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
+myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
  800185c:	b480      	push	{r7}
  800185e:	b083      	sub	sp, #12
  8001860:	af00      	add	r7, sp, #0
  8001862:	6078      	str	r0, [r7, #4]
- 8001864:	4a04      	ldr	r2, [pc, #16]	; (8001878 <_ZN24NoneBlockSystemTickDelayD1Ev+0x1c>)
+ 8001864:	4a04      	ldr	r2, [pc, #16]	; (8001878 <_ZN5myHal24NoneBlockSystemTickDelayD1Ev+0x1c>)
  8001866:	687b      	ldr	r3, [r7, #4]
  8001868:	601a      	str	r2, [r3, #0]
 	// TODO Auto-generated destructor stub
@@ -3092,15 +3092,15 @@ NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
  8001876:	4770      	bx	lr
  8001878:	080053fc 	.word	0x080053fc
 
-0800187c <_ZN24NoneBlockSystemTickDelayD0Ev>:
-NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
+0800187c <_ZN5myHal24NoneBlockSystemTickDelayD0Ev>:
+myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
  800187c:	b580      	push	{r7, lr}
  800187e:	b082      	sub	sp, #8
  8001880:	af00      	add	r7, sp, #0
  8001882:	6078      	str	r0, [r7, #4]
 }
  8001884:	6878      	ldr	r0, [r7, #4]
- 8001886:	f7ff ffe9 	bl	800185c <_ZN24NoneBlockSystemTickDelayD1Ev>
+ 8001886:	f7ff ffe9 	bl	800185c <_ZN5myHal24NoneBlockSystemTickDelayD1Ev>
  800188a:	210c      	movs	r1, #12
  800188c:	6878      	ldr	r0, [r7, #4]
  800188e:	f003 f839 	bl	8004904 <_ZdlPvj>
@@ -3110,13 +3110,13 @@ NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
  8001898:	46bd      	mov	sp, r7
  800189a:	bd80      	pop	{r7, pc}
 
-0800189c <_ZN10STM32H7LedC1EP12GPIO_TypeDeft>:
+0800189c <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft>:
  *      Author: raphael.baumeler
  */
 
 #include "STM32H7Led.h"
 
-STM32H7Led::STM32H7Led(GPIO_TypeDef *aPort, uint16_t aPin)	:
+myHal::STM32H7Led::STM32H7Led(GPIO_TypeDef *aPort, uint16_t aPin)	:
  800189c:	b480      	push	{r7}
  800189e:	b085      	sub	sp, #20
  80018a0:	af00      	add	r7, sp, #0
@@ -3125,7 +3125,7 @@ STM32H7Led::STM32H7Led(GPIO_TypeDef *aPort, uint16_t aPin)	:
  80018a6:	4613      	mov	r3, r2
  80018a8:	80fb      	strh	r3, [r7, #6]
 Port(aPort), Pin(aPin)
- 80018aa:	4a08      	ldr	r2, [pc, #32]	; (80018cc <_ZN10STM32H7LedC1EP12GPIO_TypeDeft+0x30>)
+ 80018aa:	4a08      	ldr	r2, [pc, #32]	; (80018cc <_ZN5myHal10STM32H7LedC1EP12GPIO_TypeDeft+0x30>)
  80018ac:	68fb      	ldr	r3, [r7, #12]
  80018ae:	601a      	str	r2, [r3, #0]
  80018b0:	68fb      	ldr	r3, [r7, #12]
@@ -3145,14 +3145,14 @@ Port(aPort), Pin(aPin)
  80018ca:	bf00      	nop
  80018cc:	0800540c 	.word	0x0800540c
 
-080018d0 <_ZN10STM32H7LedD1Ev>:
+080018d0 <_ZN5myHal10STM32H7LedD1Ev>:
 
-STM32H7Led::~STM32H7Led() {
+myHal::STM32H7Led::~STM32H7Led() {
  80018d0:	b480      	push	{r7}
  80018d2:	b083      	sub	sp, #12
  80018d4:	af00      	add	r7, sp, #0
  80018d6:	6078      	str	r0, [r7, #4]
- 80018d8:	4a04      	ldr	r2, [pc, #16]	; (80018ec <_ZN10STM32H7LedD1Ev+0x1c>)
+ 80018d8:	4a04      	ldr	r2, [pc, #16]	; (80018ec <_ZN5myHal10STM32H7LedD1Ev+0x1c>)
  80018da:	687b      	ldr	r3, [r7, #4]
  80018dc:	601a      	str	r2, [r3, #0]
 }
@@ -3164,15 +3164,15 @@ STM32H7Led::~STM32H7Led() {
  80018ea:	4770      	bx	lr
  80018ec:	0800540c 	.word	0x0800540c
 
-080018f0 <_ZN10STM32H7LedD0Ev>:
-STM32H7Led::~STM32H7Led() {
+080018f0 <_ZN5myHal10STM32H7LedD0Ev>:
+myHal::STM32H7Led::~STM32H7Led() {
  80018f0:	b580      	push	{r7, lr}
  80018f2:	b082      	sub	sp, #8
  80018f4:	af00      	add	r7, sp, #0
  80018f6:	6078      	str	r0, [r7, #4]
 }
  80018f8:	6878      	ldr	r0, [r7, #4]
- 80018fa:	f7ff ffe9 	bl	80018d0 <_ZN10STM32H7LedD1Ev>
+ 80018fa:	f7ff ffe9 	bl	80018d0 <_ZN5myHal10STM32H7LedD1Ev>
  80018fe:	210c      	movs	r1, #12
  8001900:	6878      	ldr	r0, [r7, #4]
  8001902:	f002 ffff 	bl	8004904 <_ZdlPvj>

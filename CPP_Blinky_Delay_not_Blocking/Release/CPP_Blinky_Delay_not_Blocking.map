@@ -1552,29 +1552,29 @@ LOAD c:/users/raphael.baumeler/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.s
  .text._ZN11BlinkingLed15processBlinkingEv
                 0x00000000080013b0       0x26 ./Core_CPP/Src/BlinkingLed.o
                 0x00000000080013b0                BlinkingLed::processBlinking()
- .text._ZN24NoneBlockSystemTickDelayD2Ev
+ .text._ZN5myHal24NoneBlockSystemTickDelayD2Ev
                 0x00000000080013d6        0x2 ./Core_CPP/Src/NoneBlockSystemTickDelay.o
-                0x00000000080013d6                NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
-                0x00000000080013d6                NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
- .text._ZN24NoneBlockSystemTickDelayD0Ev
+                0x00000000080013d6                myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
+                0x00000000080013d6                myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
+ .text._ZN5myHal24NoneBlockSystemTickDelayD0Ev
                 0x00000000080013d8        0xe ./Core_CPP/Src/NoneBlockSystemTickDelay.o
-                0x00000000080013d8                NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
+                0x00000000080013d8                myHal::NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay()
  *fill*         0x00000000080013e6        0x2 
- .text._ZN24NoneBlockSystemTickDelayC2Ev
+ .text._ZN5myHal24NoneBlockSystemTickDelayC2Ev
                 0x00000000080013e8        0xc ./Core_CPP/Src/NoneBlockSystemTickDelay.o
-                0x00000000080013e8                NoneBlockSystemTickDelay::NoneBlockSystemTickDelay()
-                0x00000000080013e8                NoneBlockSystemTickDelay::NoneBlockSystemTickDelay()
- .text._ZN10STM32H7LedD2Ev
+                0x00000000080013e8                myHal::NoneBlockSystemTickDelay::NoneBlockSystemTickDelay()
+                0x00000000080013e8                myHal::NoneBlockSystemTickDelay::NoneBlockSystemTickDelay()
+ .text._ZN5myHal10STM32H7LedD2Ev
                 0x00000000080013f4        0x2 ./Core_CPP/Src/STM32H7Led.o
-                0x00000000080013f4                STM32H7Led::~STM32H7Led()
-                0x00000000080013f4                STM32H7Led::~STM32H7Led()
- .text._ZN10STM32H7LedD0Ev
+                0x00000000080013f4                myHal::STM32H7Led::~STM32H7Led()
+                0x00000000080013f4                myHal::STM32H7Led::~STM32H7Led()
+ .text._ZN5myHal10STM32H7LedD0Ev
                 0x00000000080013f6        0xe ./Core_CPP/Src/STM32H7Led.o
-                0x00000000080013f6                STM32H7Led::~STM32H7Led()
- .text._ZN10STM32H7LedC2EP12GPIO_TypeDeft
+                0x00000000080013f6                myHal::STM32H7Led::~STM32H7Led()
+ .text._ZN5myHal10STM32H7LedC2EP12GPIO_TypeDeft
                 0x0000000008001404       0x10 ./Core_CPP/Src/STM32H7Led.o
-                0x0000000008001404                STM32H7Led::STM32H7Led(GPIO_TypeDef*, unsigned short)
-                0x0000000008001404                STM32H7Led::STM32H7Led(GPIO_TypeDef*, unsigned short)
+                0x0000000008001404                myHal::STM32H7Led::STM32H7Led(GPIO_TypeDef*, unsigned short)
+                0x0000000008001404                myHal::STM32H7Led::STM32H7Led(GPIO_TypeDef*, unsigned short)
  .text.cpp_main
                 0x0000000008001414       0x58 ./Core_CPP/Src/cpp_main.o
                 0x0000000008001414                cpp_main
@@ -1846,12 +1846,12 @@ LOAD c:/users/raphael.baumeler/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.s
  .rodata._ZTV11BlinkingLed
                 0x0000000008003988       0x20 ./Core_CPP/Src/BlinkingLed.o
                 0x0000000008003988                vtable for BlinkingLed
- .rodata._ZTV24NoneBlockSystemTickDelay
+ .rodata._ZTVN5myHal24NoneBlockSystemTickDelayE
                 0x00000000080039a8       0x10 ./Core_CPP/Src/NoneBlockSystemTickDelay.o
-                0x00000000080039a8                vtable for NoneBlockSystemTickDelay
- .rodata._ZTV10STM32H7Led
+                0x00000000080039a8                vtable for myHal::NoneBlockSystemTickDelay
+ .rodata._ZTVN5myHal10STM32H7LedE
                 0x00000000080039b8       0x10 ./Core_CPP/Src/STM32H7Led.o
-                0x00000000080039b8                vtable for STM32H7Led
+                0x00000000080039b8                vtable for myHal::STM32H7Led
  .rodata.cpp_main.str1.1
                 0x00000000080039c8       0x12 ./Core_CPP/Src/cpp_main.o
  .rodata.CSWTCH.53
