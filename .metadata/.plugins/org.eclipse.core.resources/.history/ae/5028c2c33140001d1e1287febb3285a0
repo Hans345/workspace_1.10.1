@@ -1,0 +1,17 @@
+/*
+ * NoneBlockSystemTickDelay.h
+ *
+ *  Created on: Sep 29, 2022
+ *      Author: raphael.baumeler
+ */
+
+#ifndef NONEBLOCKSYSTEMTICKDELAY_H_
+#define NONEBLOCKSYSTEMTICKDELAY_H_
+
+class NoneBlockSystemTickDelay {
+public:
+	NoneBlockSystemTickDelay();
+	virtual ~NoneBlockSystemTickDelay();
+};
+
+#endif /* NONEBLOCKSYSTEMTICKDELAY_H_ */

@@ -1,0 +1,24 @@
+/*
+ * BlinkingLed.cpp
+ *
+ *  Created on: Sep 29, 2022
+ *      Author: raphael.baumeler
+ */
+
+#include "BlinkingLed.h"
+
+BlinkingLed::BlinkingLed() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BlinkingLed::BlinkingLed(GPIO_TypeDef *aPort, uint16_t aPin, float_t aFrequency,
+		uint8_t aDutyCycle) {
+}
+
+BlinkingLed::~BlinkingLed() {
+	// TODO Auto-generated destructor stub
+}
+
+void BlinkingLed::processBlinking() {
+}

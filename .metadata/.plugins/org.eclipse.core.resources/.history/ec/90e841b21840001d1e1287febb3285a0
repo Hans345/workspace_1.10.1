@@ -1,0 +1,21 @@
+/*
+ * NoneBlockSystemTickDelay.cpp
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#include "../../Core_CPP/Inc/NoneBlockSystemTickDelay.h"
+
+NoneBlockSystemTickDelay::NoneBlockSystemTickDelay(
+		float_t aFrequency,
+		uint8_t aDutyCycle	:
+		BlinkingLed(aFrequency, aDutyCycle),
+		DelayNoneBlocking_wait(aDelayNoneBlocking_wait),
+		DelayNoneBlocking_tickstart(aDelayNoneBlocking_tickstart) {
+}
+
+NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
+
+}
+

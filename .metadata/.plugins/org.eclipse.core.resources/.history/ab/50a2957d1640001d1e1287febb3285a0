@@ -1,0 +1,22 @@
+/*
+ * NoneBlockSystemTickDelay.cpp
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#include "../../Core_CPP/Inc/NoneBlockSystemTickDelay.h"
+
+NoneBlockSystemTickDelay::NoneBlockSystemTickDelay() {
+	// TODO Auto-generated constructor stub
+}
+
+NoneBlockSystemTickDelay::NoneBlockSystemTickDelay(
+		uint32_t aDelayNoneBlocking_wait,
+		uint32_t aDelayNoneBlocking_tickstart) {
+}
+
+NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
+	// TODO Auto-generated destructor stub
+}
+

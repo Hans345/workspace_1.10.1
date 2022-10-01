@@ -1,0 +1,20 @@
+/*
+ * BlinkingLed.h
+ *
+ *  Created on: Sep 29, 2022
+ *      Author: raphael.baumeler
+ */
+
+#ifndef BLINKINGLED_H_
+#define BLINKINGLED_H_
+
+#include "NoneBlockSystemTickDelay.h"
+#include "STM32H7Led.h"
+
+class BlinkingLed: public NoneBlockSystemTickDelay {
+public:
+	BlinkingLed();
+	virtual ~BlinkingLed();
+};
+
+#endif /* BLINKINGLED_H_ */

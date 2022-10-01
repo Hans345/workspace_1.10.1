@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CPP_Blinky_Delay_not_Blocking/Core_CPP1&apos; to &apos;Core_CPP&apos;" description="Rename resource &apos;Core_CPP1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core_CPP1" name="Core_CPP" stamp="1664299979480" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CPP_Blinky_Delay_not_Blocking/Core_CPP1&apos; to &apos;Core_CPP&apos;" description="Rename resource &apos;Core_CPP1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core_CPP1" name="Core_CPP" stamp="1664462132808" updateReferences="true"/>
+</session>

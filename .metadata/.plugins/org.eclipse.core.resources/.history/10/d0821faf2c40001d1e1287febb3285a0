@@ -1,0 +1,19 @@
+/*
+ * NoneBlockSystemTickDelay.cpp
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#include "../../Core_CPP/Inc/NoneBlockSystemTickDelay.h"
+
+NoneBlockSystemTickDelay::NoneBlockSystemTickDelay(float_t aFrequency, uint8_t aDutyCycle)
+{
+	DelayNoneBlocking_wait = (1000/aFrequency)*(aDutyCycle/100); //in ms
+	DelayNoneBlocking_tickstart = HAL_GetTick(); //get current Time in ms
+}
+
+NoneBlockSystemTickDelay::~NoneBlockSystemTickDelay() {
+
+}
+

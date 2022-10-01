@@ -1,0 +1,23 @@
+/*
+ * BlinkingLed.cpp
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: raphael.baumeler
+ */
+
+#include "../../Core_CPP/Inc/BlinkingLed.h"
+
+BlinkingLed::BlinkingLed(GPIO_TypeDef* aPort, uint16_t aPin, float_t aFrequency, uint8_t aDutyCycle)	:
+STM32H7Led(aPort, aPin), NoneBlockSystemTickDelay(aFrequency, aDutyCycle), Frequency(aFrequency), DutyCycle(aDutyCycle)
+{
+}
+
+BlinkingLed::~BlinkingLed() {
+
+}
+
+
+void BlinkingLed::processBlinking() {
+
+
+}

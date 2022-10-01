@@ -10,8 +10,6 @@
 "./Core_CPP/Src/STM32H7Led.o"
 "./Core_CPP/Src/cpp_main.o"
 "./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
-"./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
-"./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
 "./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
 "./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
 "./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
