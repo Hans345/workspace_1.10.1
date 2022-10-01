@@ -4068,3 +4068,76 @@ java.io.FileNotFoundException: C:\Users\raphael.baumeler\STM32CubeIDE\workspace_
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 12:56:12.472
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 13:01:40.662
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 13:05:58.357
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 13:55:00.944
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 13:57:10.324
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:01:07.371
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:01:53.175
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:02:50.983
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:05:32.662
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2022-10-01 14:28:38.356
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template\Debug\CPP_Template.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2022-10-01 14:28:38.357
+!MESSAGE C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template\Debug\CPP_Template.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template\Debug\CPP_Template.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:45:55.891
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:50:06.150
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:52:13.455
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 14:55:17.922
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 15:08:14.311
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-10-01 15:16:35.484
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 72000000; div: 36

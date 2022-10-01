@@ -1,10 +1,10 @@
-12:56:04 **** Incremental Build of configuration Debug for project CPP_Template ****
+15:16:27 **** Incremental Build of configuration Debug for project CPP_Template ****
 make -j8 all 
 arm-none-eabi-size   CPP_Template.elf 
    text	   data	    bss	    dec	    hex	filename
-  24512	    440	   3256	  28208	   6e30	CPP_Template.elf
+  31432	    440	   3256	  35128	   8938	CPP_Template.elf
 Finished building: default.size.stdout
  
 
-12:56:04 Build Finished. 0 errors, 0 warnings. (took 425ms)
+15:16:27 Build Finished. 0 errors, 0 warnings. (took 500ms)
 
