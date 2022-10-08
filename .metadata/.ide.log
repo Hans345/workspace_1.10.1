@@ -5487,3 +5487,7 @@
 2022-10-01 12:03:11,443 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
 2022-10-01 12:32:43,994 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
 2022-10-01 15:17:57,512 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-10-08 08:26:25,585 [INFO] Activator:177 - 
+
+
+2022-10-08 08:26:25,588 [INFO] Activator:178 - !SESSION log4j initialized

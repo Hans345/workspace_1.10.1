@@ -1,0 +1,10 @@
+08:31:48 **** Incremental Build of configuration Debug for project CPP_autoconsole ****
+make -j8 all 
+arm-none-eabi-size   CPP_autoconsole.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32992	    804	   3340	  37136	   9110	CPP_autoconsole.elf
+Finished building: default.size.stdout
+ 
+
+08:31:49 Build Finished. 0 errors, 0 warnings. (took 430ms)
+

@@ -1,21 +1,51 @@
-15:16:16 **** Incremental Build of configuration Debug for project CPP_Template ****
+14:18:28 **** Incremental Build of configuration Debug for project CPP_IKS01A3 ****
 make -j8 all 
-arm-none-eabi-g++ "../Core_CPP/Src/cpp_main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_Template/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/cpp_main.d" -MT"Core_CPP/Src/cpp_main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/cpp_main.o"
-arm-none-eabi-g++ -o "CPP_Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: CPP_Template.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../MEMS/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -I../MEMS/App -I../Drivers/BSP/STM32F7xx_Nucleo -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:142:18: warning: variable 'acc' set but not used [-Wunused-but-set-variable]
+  142 |   Acceleration_t acc = Accelometer_GetData(true);
+      |                  ^~~
+../Core/Src/main.c: In function 'Accelometer_GetData':
+../Core/Src/main.c:350:11: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  350 |   int32_t ret;
+      |           ^~~
+arm-none-eabi-g++ -o "CPP_IKS01A3.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_IKS01A3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: CPP_IKS01A3.elf
  
-arm-none-eabi-size   CPP_Template.elf 
-arm-none-eabi-objdump -h -S  CPP_Template.elf  > "CPP_Template.list"
+arm-none-eabi-size   CPP_IKS01A3.elf 
+arm-none-eabi-objdump -h -S  CPP_IKS01A3.elf  > "CPP_IKS01A3.list"
    text	   data	    bss	    dec	    hex	filename
-  31432	    440	   3256	  35128	   8938	CPP_Template.elf
+  60832	   1044	   4092	  65968	  101b0	CPP_IKS01A3.elf
 Finished building: default.size.stdout
  
-Finished building: CPP_Template.list
+Finished building: CPP_IKS01A3.list
  
-15:16:27 **** Incremental Build of configuration Debug for project CPP_Template ****
+14:18:37 **** Incremental Build of configuration Debug for project CPP_IKS01A3 ****
 make -j8 all 
-arm-none-eabi-size   CPP_Template.elf 
+arm-none-eabi-size   CPP_IKS01A3.elf 
    text	   data	    bss	    dec	    hex	filename
-  31432	    440	   3256	  35128	   8938	CPP_Template.elf
+  60832	   1044	   4092	  65968	  101b0	CPP_IKS01A3.elf
 Finished building: default.size.stdout
+ 
+14:20:14 **** Incremental Build of configuration Debug for project CPP_IKS01A3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../MEMS/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -I../MEMS/App -I../Drivers/BSP/STM32F7xx_Nucleo -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:142:18: warning: variable 'acc' set but not used [-Wunused-but-set-variable]
+  142 |   Acceleration_t acc = Accelometer_GetData(true);
+      |                  ^~~
+../Core/Src/main.c: In function 'Accelometer_GetData':
+../Core/Src/main.c:350:11: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  350 |   int32_t ret;
+      |           ^~~
+arm-none-eabi-g++ -o "CPP_IKS01A3.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_IKS01A3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: CPP_IKS01A3.elf
+ 
+arm-none-eabi-size   CPP_IKS01A3.elf 
+arm-none-eabi-objdump -h -S  CPP_IKS01A3.elf  > "CPP_IKS01A3.list"
+   text	   data	    bss	    dec	    hex	filename
+  60832	   1044	   4092	  65968	  101b0	CPP_IKS01A3.elf
+Finished building: default.size.stdout
+ 
+Finished building: CPP_IKS01A3.list
  

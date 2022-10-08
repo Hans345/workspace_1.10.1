@@ -1,0 +1,17 @@
+10:14:44 **** Incremental Build of configuration Debug for project Example_IKS01A3_DataLogTerminal ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../MEMS/App -I../MEMS/Target -I../Core/Inc -I../Drivers/BSP/STM32F7xx_Nucleo -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Example_IKS01A3_DataLogTerminal.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\Example_IKS01A3_DataLogTerminal\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Example_IKS01A3_DataLogTerminal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Example_IKS01A3_DataLogTerminal.elf
+ 
+arm-none-eabi-size   Example_IKS01A3_DataLogTerminal.elf 
+arm-none-eabi-objdump -h -S  Example_IKS01A3_DataLogTerminal.elf  > "Example_IKS01A3_DataLogTerminal.list"
+   text	   data	    bss	    dec	    hex	filename
+  69012	    836	   4164	  74012	  1211c	Example_IKS01A3_DataLogTerminal.elf
+Finished building: default.size.stdout
+ 
+Finished building: Example_IKS01A3_DataLogTerminal.list
+ 
+
+10:14:47 Build Finished. 0 errors, 0 warnings. (took 2s.742ms)
+

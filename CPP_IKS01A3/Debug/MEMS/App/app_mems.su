@@ -1,0 +1,8 @@
+../MEMS/App/app_mems.c:77:6:MX_MEMS_Init	8	static
+../MEMS/App/app_mems.c:99:6:MX_MEMS_Process	8	static
+../MEMS/App/app_mems.c:116:6:MX_IKS01A3_LIS2DW12_SelfTest_Init	8	static
+../MEMS/App/app_mems.c:141:6:BSP_PB_Callback	16	static
+../MEMS/App/app_mems.c:150:6:MX_IKS01A3_LIS2DW12_SelfTest_Process	8	static
+../MEMS/App/app_mems.c:198:13:Sleep_Mode	8	static
+../MEMS/App/app_mems.c:209:16:LIS2DW12_X_SelfTest	72	static
+../MEMS/App/app_mems.c:388:16:LIS2DW12_X_Get_Data	24	static
