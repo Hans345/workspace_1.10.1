@@ -389,7 +389,7 @@ static Acceleration_t Accelometer_GetData(_Bool init)
   {
 	  acc_offset.x = 9.81*(data_nost.x/N_SAMPLES)/1000.0; //[m/s^2]
 	  acc_offset.y = 9.81*(data_nost.y/N_SAMPLES)/1000.0;
-	  acc_offset.z = 9.81*(data_nost.z/N_SAMPLES)/1000.0;
+	  acc_offset.z = 9.81*(data_nost.z/N_SAMPLES)/1000.0 - 9.81; // Erdbeschleunigung berücksichtigen!
 	  data_nost.x = 9.81*(data_nost.x/N_SAMPLES)/1000.0 - acc_offset.x; //[m/s^2]
 	  data_nost.y = 9.81*(data_nost.y/N_SAMPLES)/1000.0 - acc_offset.y;
 	  data_nost.z = 9.81*(data_nost.z/N_SAMPLES)/1000.0 - acc_offset.z;

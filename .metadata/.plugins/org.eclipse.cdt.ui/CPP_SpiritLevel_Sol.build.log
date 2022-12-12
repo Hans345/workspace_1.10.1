@@ -1,0 +1,10 @@
+17:28:35 **** Incremental Build of configuration Debug for project CPP_SpiritLevel_Sol ****
+make -j8 all 
+arm-none-eabi-size   CPP_SpiritLevel_Sol.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 207880	   1320	   9800	 219000	  35778	CPP_SpiritLevel_Sol.elf
+Finished building: default.size.stdout
+ 
+
+17:28:35 Build Finished. 0 errors, 0 warnings. (took 461ms)
+

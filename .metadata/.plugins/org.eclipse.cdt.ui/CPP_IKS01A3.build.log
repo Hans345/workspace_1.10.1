@@ -1,4 +1,4 @@
-14:20:14 **** Incremental Build of configuration Debug for project CPP_IKS01A3 ****
+17:03:54 **** Incremental Build of configuration Debug for project CPP_IKS01A3 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../MEMS/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -I../MEMS/App -I../Drivers/BSP/STM32F7xx_Nucleo -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
@@ -15,11 +15,11 @@ Finished building target: CPP_IKS01A3.elf
 arm-none-eabi-size   CPP_IKS01A3.elf 
 arm-none-eabi-objdump -h -S  CPP_IKS01A3.elf  > "CPP_IKS01A3.list"
    text	   data	    bss	    dec	    hex	filename
-  60832	   1044	   4092	  65968	  101b0	CPP_IKS01A3.elf
+  60848	   1044	   4092	  65984	  101c0	CPP_IKS01A3.elf
 Finished building: default.size.stdout
  
 Finished building: CPP_IKS01A3.list
  
 
-14:20:15 Build Finished. 0 errors, 2 warnings. (took 981ms)
+17:03:56 Build Finished. 0 errors, 2 warnings. (took 2s.36ms)
 

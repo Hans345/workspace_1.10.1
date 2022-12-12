@@ -16,6 +16,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\Solution\2022_embreal_part1"/>
+			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template"/>
+			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_autoconsole"/>
 			<item value="C:\Users\raphael.baumeler\STM32Cube\Repository\STM32Cube_FW_F7_V1.17.0\Projects\STM32F746ZG-Nucleo\Examples\GPIO\GPIO_IOToggle"/>
 			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\Empty_CPP_Project"/>
 			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\C_Blinky"/>
