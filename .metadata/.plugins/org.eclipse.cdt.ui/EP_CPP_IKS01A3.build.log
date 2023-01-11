@@ -1,17 +1,10 @@
-12:42:03 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3 ****
+14:35:37 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3 ****
 make -j8 all 
-arm-none-eabi-g++ "../CPP_Core/Src/IKS01A3Motion.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../X-CUBE-MEMS1/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3/CPP_Core/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP_Core/Src/IKS01A3Motion.d" -MT"CPP_Core/Src/IKS01A3Motion.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "CPP_Core/Src/IKS01A3Motion.o"
-arm-none-eabi-g++ -o "EP_CPP_IKS01A3.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_IKS01A3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: EP_CPP_IKS01A3.elf
- 
 arm-none-eabi-size   EP_CPP_IKS01A3.elf 
-arm-none-eabi-objdump -h -S  EP_CPP_IKS01A3.elf  > "EP_CPP_IKS01A3.list"
    text	   data	    bss	    dec	    hex	filename
-  20748	    440	   3256	  24444	   5f7c	EP_CPP_IKS01A3.elf
+  48412	    660	   3804	  52876	   ce8c	EP_CPP_IKS01A3.elf
 Finished building: default.size.stdout
  
-Finished building: EP_CPP_IKS01A3.list
- 
 
-12:42:04 Build Finished. 0 errors, 0 warnings. (took 1s.465ms)
+14:35:37 Build Finished. 0 errors, 0 warnings. (took 332ms)
 
