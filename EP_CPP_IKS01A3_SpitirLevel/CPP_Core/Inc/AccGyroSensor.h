@@ -23,6 +23,7 @@ public:
 	virtual ~AccGyroSensor();
 	void initSensor();
 	void updateValues();
+	void setZero();
 };
 
 #endif /* ACCGYROSENSOR_H_ */

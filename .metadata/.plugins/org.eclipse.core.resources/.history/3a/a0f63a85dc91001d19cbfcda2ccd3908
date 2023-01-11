@@ -1,0 +1,27 @@
+/*
+ * STM32H7Led.cpp
+ *
+ *  Created on: 11.01.2023
+ *      Author: raphael.baumeler
+ */
+
+#include "STM32H7Led.h"
+
+STM32H7Led::STM32H7Led(GPIO_TypeDef *Port, uint16_t Pin) {
+	// TODO Auto-generated constructor stub
+	*Port = *Port;
+	*Pin = *Pin;
+}
+
+STM32H7Led::~STM32H7Led() {
+	// TODO Auto-generated destructor stub
+}
+
+void STM32H7Led::toggleLED(void) {
+}
+
+void STM32H7Led::setLED(void) {
+}
+
+void STM32H7Led::unsetLED(void) {
+}

@@ -1,4 +1,4 @@
-../Core/Src/cpp_main.cpp:21:6:void cpp_main()	16	static
-../Core/Src/cpp_main.cpp:57:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Core/Src/cpp_main.cpp:57:1:cpp)	8	static
-../Core/Src/cpp_main.cpp:57:1:cpp)	8	static
+../Core/Src/cpp_main.cpp:15:6:void cpp_main()	16	static
+../Core/Src/cpp_main.cpp:35:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Core/Src/cpp_main.cpp:35:1:cpp)	8	static
+../Core/Src/cpp_main.cpp:35:1:cpp)	8	static

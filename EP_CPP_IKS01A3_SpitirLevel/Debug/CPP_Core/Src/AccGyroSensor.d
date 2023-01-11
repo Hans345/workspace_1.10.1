@@ -1,6 +1,6 @@
 CPP_Core/Src/AccGyroSensor.o: ../CPP_Core/Src/AccGyroSensor.cpp \
- C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_ArrayAvg/CPP_Core/Inc/AccGyroSensor.h \
- C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_ArrayAvg/CPP_Core/Inc/IKS01A3Motion.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h \
  ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h \
  ../X-CUBE-MEMS1/Target/iks01a3_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
@@ -45,8 +45,8 @@ CPP_Core/Src/AccGyroSensor.o: ../CPP_Core/Src/AccGyroSensor.cpp \
  ../Drivers/BSP/Components/lis2dw12/lis2dw12_reg.h \
  ../Drivers/BSP/Components/lis2mdl/lis2mdl.h \
  ../Drivers/BSP/Components/lis2mdl/lis2mdl_reg.h
-C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_ArrayAvg/CPP_Core/Inc/AccGyroSensor.h:
-C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_ArrayAvg/CPP_Core/Inc/IKS01A3Motion.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h:
 ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h:
 ../X-CUBE-MEMS1/Target/iks01a3_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:

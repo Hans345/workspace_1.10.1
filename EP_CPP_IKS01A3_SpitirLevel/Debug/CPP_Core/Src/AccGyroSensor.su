@@ -3,3 +3,4 @@
 ../CPP_Core/Src/AccGyroSensor.cpp:15:1:virtual AccGyroSensor::~AccGyroSensor()	16	static
 ../CPP_Core/Src/AccGyroSensor.cpp:19:6:void AccGyroSensor::initSensor()	16	static
 ../CPP_Core/Src/AccGyroSensor.cpp:23:6:void AccGyroSensor::updateValues()	16	static
+../CPP_Core/Src/AccGyroSensor.cpp:28:6:void AccGyroSensor::setZero()	16	static

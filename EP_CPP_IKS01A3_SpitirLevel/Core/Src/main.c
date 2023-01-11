@@ -82,7 +82,29 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/*int __io_putchar(int ch)
+{
+    uint8_t c[1];
+    c[0] = ch & 0x00FF;
+    HAL_UART_Transmit(&huart3, &*c, 1, HAL_MAX_DELAY);
+    return ch;
+}
 
+int _write(int file,char *ptr, int len)
+{
+    HAL_UART_Transmit(&huart3, (uint8_t *)ptr, len, HAL_MAX_DELAY);
+    return len;
+}*/
+int _write(int file, char *ptr, int len)
+{
+ int DataIdx;
+
+  for(DataIdx=0; DataIdx<len; DataIdx++)
+  {
+    ITM_SendChar(*ptr++);
+  }
+  return len;
+}
 /* USER CODE END 0 */
 
 /**
@@ -319,7 +341,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOG_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LD1_Pin|LD3_Pin|LD2_Blue_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LD1_Green_Pin|LD3_Red_Pin|LD2_Blue_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(USB_PowerSwitchOn_GPIO_Port, USB_PowerSwitchOn_Pin, GPIO_PIN_RESET);
@@ -330,8 +352,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USER_Btn_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LD1_Pin LD3_Pin LD2_Blue_Pin */
-  GPIO_InitStruct.Pin = LD1_Pin|LD3_Pin|LD2_Blue_Pin;
+  /*Configure GPIO pins : LD1_Green_Pin LD3_Red_Pin LD2_Blue_Pin */
+  GPIO_InitStruct.Pin = LD1_Green_Pin|LD3_Red_Pin|LD2_Blue_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -353,16 +375,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-int _write(int file, char *ptr, int len)
-{
- int DataIdx;
 
-  for(DataIdx=0; DataIdx<len; DataIdx++)
-  {
-    ITM_SendChar(*ptr++);
-  }
-  return len;
-}
 /* USER CODE END 4 */
 
 /**

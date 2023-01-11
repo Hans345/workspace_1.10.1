@@ -1,5 +1,0 @@
-../CPP_Core/Src/AccSensor.cpp:10:1:AccSensor::AccSensor()	16	static
-../CPP_Core/Src/AccSensor.cpp:15:1:AccSensor::~AccSensor()	16	static
-../CPP_Core/Src/AccSensor.cpp:15:1:virtual AccSensor::~AccSensor()	16	static
-../CPP_Core/Src/AccSensor.cpp:19:6:void AccSensor::initSensor()	16	static
-../CPP_Core/Src/AccSensor.cpp:23:6:void AccSensor::updateValues()	16	static

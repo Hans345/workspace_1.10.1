@@ -1,6 +1,8 @@
 "./CPP_Core/Src/AccGyroSensor.o"
 "./CPP_Core/Src/AccSensor.o"
 "./CPP_Core/Src/IKS01A3Motion.o"
+"./CPP_Core/Src/STM32H7Led.o"
+"./CPP_Core/Src/SpiritLevelSignelAxis3LED.o"
 "./Core/Src/cpp_main.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f7xx_hal_msp.o"

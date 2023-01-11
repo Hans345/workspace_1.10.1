@@ -24,3 +24,8 @@ void AccGyroSensor::updateValues() {
 	AccGyroSensor::Gyro.updateValues(INSTANCE, FUNCTION_GYRO);
 	AccGyroSensor::Acc.updateValues(INSTANCE, FUNCTION_ACC);
 }
+
+void AccGyroSensor::setZero() {
+	AccGyroSensor::Acc.setZero();
+	AccGyroSensor::Gyro.setZero();
+}

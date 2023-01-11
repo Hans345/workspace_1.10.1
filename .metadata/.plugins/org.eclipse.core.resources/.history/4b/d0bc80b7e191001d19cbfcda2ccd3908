@@ -1,0 +1,21 @@
+/*
+ * SpiritLevelSignelAxis3LED.cpp
+ *
+ *  Created on: 11.01.2023
+ *      Author: raphael.baumeler
+ */
+
+#include "SpiritLevelSignelAxis3LED.h"
+
+SpiritLevelSignelAxis3LED::SpiritLevelSignelAxis3LED() {
+	// TODO Auto-generated constructor stub
+	SpiritLevelSignelAxis3LED::accGyro = AccGyroSensor();
+	SpiritLevelSignelAxis3LED::ledNegAngle = STM32H7Led(GPIOB, GPIO_PIN_0); //Green
+	SpiritLevelSignelAxis3LED::ledBalanced = STM32H7Led(GPIOB, GPIO_PIN_7); //Blue
+	SpiritLevelSignelAxis3LED::ledPosAngle = STM32H7Led(GPIOB, GPIO_PIN_14);//Red
+}
+
+SpiritLevelSignelAxis3LED::~SpiritLevelSignelAxis3LED() {
+	// TODO Auto-generated destructor stub
+}
+

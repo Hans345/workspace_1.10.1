@@ -57,34 +57,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := EP_CPP_IKS01A3_ArrayAvg
+BUILD_ARTIFACT_NAME := EP_CPP_IKS01A3_SpitirLevel
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-EP_CPP_IKS01A3_ArrayAvg.elf \
+EP_CPP_IKS01A3_SpitirLevel.elf \
 
 MAP_FILES += \
-EP_CPP_IKS01A3_ArrayAvg.map \
+EP_CPP_IKS01A3_SpitirLevel.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-EP_CPP_IKS01A3_ArrayAvg.list \
+EP_CPP_IKS01A3_SpitirLevel.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: EP_CPP_IKS01A3_ArrayAvg.elf secondary-outputs
+main-build: EP_CPP_IKS01A3_SpitirLevel.elf secondary-outputs
 
 # Tool invocations
-EP_CPP_IKS01A3_ArrayAvg.elf EP_CPP_IKS01A3_ArrayAvg.map: $(OBJS) $(USER_OBJS) C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_ArrayAvg\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "EP_CPP_IKS01A3_ArrayAvg.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_ArrayAvg\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_IKS01A3_ArrayAvg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+EP_CPP_IKS01A3_SpitirLevel.elf EP_CPP_IKS01A3_SpitirLevel.map: $(OBJS) $(USER_OBJS) C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_SpitirLevel\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "EP_CPP_IKS01A3_SpitirLevel.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_SpitirLevel\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_IKS01A3_SpitirLevel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -93,14 +93,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-EP_CPP_IKS01A3_ArrayAvg.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "EP_CPP_IKS01A3_ArrayAvg.list"
+EP_CPP_IKS01A3_SpitirLevel.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "EP_CPP_IKS01A3_SpitirLevel.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) EP_CPP_IKS01A3_ArrayAvg.elf EP_CPP_IKS01A3_ArrayAvg.list EP_CPP_IKS01A3_ArrayAvg.map default.size.stdout
+	-$(RM) EP_CPP_IKS01A3_SpitirLevel.elf EP_CPP_IKS01A3_SpitirLevel.list EP_CPP_IKS01A3_SpitirLevel.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

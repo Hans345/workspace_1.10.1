@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EP_CPP_IKS01A3_SpitirLevel/EP_CPP_IKS01A3_ArrayAvg.ioc&apos; to &apos;EP_CPP_IKS01A3_SpitirLevel.ioc&apos;" description="Rename resource &apos;EP_CPP_IKS01A3_ArrayAvg.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EP_CPP_IKS01A3_ArrayAvg.ioc" name="EP_CPP_IKS01A3_SpitirLevel.ioc" stamp="1673460378386" updateReferences="true"/>
+</session>
