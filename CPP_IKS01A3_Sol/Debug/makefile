@@ -56,34 +56,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := CPP_IKS01A3_Sol
+BUILD_ARTIFACT_NAME := EP_CPP_autoconsole
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-CPP_IKS01A3_Sol.elf \
+EP_CPP_autoconsole.elf \
 
 MAP_FILES += \
-CPP_IKS01A3_Sol.map \
+EP_CPP_autoconsole.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-CPP_IKS01A3_Sol.list \
+EP_CPP_autoconsole.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: CPP_IKS01A3_Sol.elf secondary-outputs
+main-build: EP_CPP_autoconsole.elf secondary-outputs
 
 # Tool invocations
-CPP_IKS01A3_Sol.elf CPP_IKS01A3_Sol.map: $(OBJS) $(USER_OBJS) C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3_Sol\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "CPP_IKS01A3_Sol.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3_Sol\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CPP_IKS01A3_Sol.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+EP_CPP_autoconsole.elf EP_CPP_autoconsole.map: $(OBJS) $(USER_OBJS) C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3_Sol\STM32F746ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "EP_CPP_autoconsole.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_IKS01A3_Sol\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_autoconsole.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -92,14 +92,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-CPP_IKS01A3_Sol.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "CPP_IKS01A3_Sol.list"
+EP_CPP_autoconsole.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "EP_CPP_autoconsole.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) CPP_IKS01A3_Sol.elf CPP_IKS01A3_Sol.list CPP_IKS01A3_Sol.map default.size.stdout
+	-$(RM) EP_CPP_autoconsole.elf EP_CPP_autoconsole.list EP_CPP_autoconsole.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

@@ -1,17 +1,10 @@
-09:13:15 **** Incremental Build of configuration Debug for project EP_CPP_autoconsole ****
+18:51:00 **** Incremental Build of configuration Debug for project EP_CPP_autoconsole ****
 make -j8 all 
-arm-none-eabi-g++ "../Core_CPP/Src/cpp_main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_autoconsole/Core_CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core_CPP/Src/cpp_main.d" -MT"Core_CPP/Src/cpp_main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core_CPP/Src/cpp_main.o"
-arm-none-eabi-g++ -o "EP_CPP_autoconsole.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_autoconsole\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_autoconsole.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: EP_CPP_autoconsole.elf
- 
 arm-none-eabi-size   EP_CPP_autoconsole.elf 
-arm-none-eabi-objdump -h -S  EP_CPP_autoconsole.elf  > "EP_CPP_autoconsole.list"
    text	   data	    bss	    dec	    hex	filename
-  31920	    804	   3340	  36064	   8ce0	EP_CPP_autoconsole.elf
+  20748	    440	   3256	  24444	   5f7c	EP_CPP_autoconsole.elf
 Finished building: default.size.stdout
  
-Finished building: EP_CPP_autoconsole.list
- 
 
-09:13:16 Build Finished. 0 errors, 0 warnings. (took 792ms)
+18:51:00 Build Finished. 0 errors, 0 warnings. (took 319ms)
 

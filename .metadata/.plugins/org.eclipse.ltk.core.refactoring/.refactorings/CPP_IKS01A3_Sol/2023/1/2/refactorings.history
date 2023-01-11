@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CPP_IKS01A3_Sol/Core/Src/main_cpp.cpp&apos; to &apos;cpp_main.cpp&apos;" description="Rename resource &apos;main_cpp.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/main_cpp.cpp" name="cpp_main.cpp" stamp="1673430085260" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CPP_IKS01A3_Sol/Core/Inc/main_cpp.h&apos; to &apos;cpp_main.h&apos;" description="Rename resource &apos;main_cpp.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/main_cpp.h" name="cpp_main.h" stamp="1673430094075" updateReferences="true"/>
-</session>

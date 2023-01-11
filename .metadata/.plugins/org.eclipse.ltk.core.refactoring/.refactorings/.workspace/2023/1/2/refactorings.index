@@ -30,3 +30,7 @@
 1673433765359	Delete resource 'EP_CPP_IKS01A3/CPP_Core/Src/IKS01A3_Motion.cpp'
 1673439523038	Delete resource 'EP_CPP_IKS01A3/Debug'
 1673439704603	Delete resource 'EP_CPP_IKS01A3/EP_CPP_IKS01A3 Debug.launch'
+1673459290213	Rename resource 'CPP_IKS01A3_Sol'
+1673459322431	Rename resource 'EP_autoconsole'
+1673459330552	Delete resource 'EP_CPP_autoconsole/Debug/CPP_IKS01A3_Sol.elf'
+1673459333430	Delete resource 'EP_CPP_autoconsole/Debug'

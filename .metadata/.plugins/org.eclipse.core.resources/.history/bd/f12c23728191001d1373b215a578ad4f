@@ -1,3 +1,0 @@
-C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_autoconsole/Core_CPP/Inc/NoneBlockSystemTickDelay.h:23:7:void myHal::NoneBlockSystemTickDelay::DelayNonBlocking_Init(uint32_t)	16	static
-C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/CPP_autoconsole/Core_CPP/Inc/BlinkingLed.h:40:7:void BlinkingLed::setFrequency(float_t)	32	static
-../Core_CPP/Src/cpp_main.cpp:19:6:void cpp_main()	112	static
