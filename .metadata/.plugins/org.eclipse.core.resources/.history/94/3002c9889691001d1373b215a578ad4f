@@ -1,0 +1,17 @@
+/*
+ * main_cpp.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#pragma once
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void cpp_main();
+
+#ifdef __cplusplus
+}
+#endif

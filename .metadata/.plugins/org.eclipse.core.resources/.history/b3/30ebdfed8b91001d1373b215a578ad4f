@@ -1,0 +1,23 @@
+/*
+ * IKS01A3Motion.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef INC_IKS01A3MOTION_H_
+#define INC_IKS01A3MOTION_H_
+
+#include <stdint.h>
+
+class IKS01A3_Motion {
+private:
+	IKS01A3_Motion_Sensor_Axes_t AxisValues;
+	IKS01A3_Motion_Sensor_Axes_t AxisOffsets;
+	std::array<int32_t> RingBufferAxisX;
+public:
+	IKS01A3_Motion();
+	virtual ~IKS01A3_Motion();
+};
+
+#endif /* INC_IKS01A3MOTION_H_ */

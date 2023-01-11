@@ -1,0 +1,20 @@
+/*
+ * cpp_main.cpp
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "cpp_main.h"
+#include <stdint.h>		//For. printf()
+
+
+void cpp_main(){
+while (1)
+	{
+		HAL_GPIO_TogglePin(GPIOB, LD2_Blue)
+		HAL_Delay(250);
+	}
+}
+
+

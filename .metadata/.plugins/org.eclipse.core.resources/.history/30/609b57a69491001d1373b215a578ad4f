@@ -1,0 +1,20 @@
+/*
+ * main_cpp.cpp
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "cpp_main.h"
+#include "main.h"
+
+
+void cpp_main(){
+
+while (1)
+	{
+
+	}
+}
+
+
