@@ -1,0 +1,22 @@
+/*
+ * AccSensor.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef ACCSENSOR_H_
+#define ACCSENSOR_H_
+
+#include "IKS01A3Motion.h"
+
+class AccSensor {
+public:
+	IKS01A3_Motion Acc; //Composition
+	AccSensor();
+	virtual ~AccSensor();
+	void initSensor();
+	void updateValues();
+};
+
+#endif /* ACCSENSOR_H_ */

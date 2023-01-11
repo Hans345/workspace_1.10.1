@@ -19,6 +19,7 @@ RM := rm -rf
 -include Drivers/BSP/Components/hts221/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include CPP_Core/Src/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

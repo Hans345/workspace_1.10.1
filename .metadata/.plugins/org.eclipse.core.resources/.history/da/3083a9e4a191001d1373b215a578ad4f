@@ -1,0 +1,37 @@
+/*
+ * IKS01A3Motion.cpp
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "IKS01A3Motion.h"
+
+IKS01A3_Motion::IKS01A3_Motion() {
+	// TODO Auto-generated constructor stub
+
+}
+
+IKS01A3_Motion::~IKS01A3_Motion() {
+	// TODO Auto-generated destructor stub
+}
+
+void IKS01A3_Motion::init(uint32_t instance, uint32_t function) {
+}
+
+void IKS01A3_Motion::enable(uint32_t instance, uint32_t function) {
+}
+
+void IKS01A3_Motion::getValue(uint32_t instance, uint32_t function,
+		int32_t *XAxis, int32_t *YAxis, int32_t *ZAxis) {
+}
+
+void IKS01A3_Motion::setZero() {
+}
+
+void IKS01A3_Motion::updateValues(uint32_t instance, uint32_t function) {
+}
+
+void IKS01A3_Motion::getAVGValues(int32_t *XAxis, int32_t *YAxis,
+		int32_t *ZAxis) {
+}

@@ -1,0 +1,17 @@
+/*
+ * AccSensor.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef ACCSENSOR_H_
+#define ACCSENSOR_H_
+
+class AccSensor {
+public:
+	AccSensor();
+	virtual ~AccSensor();
+};
+
+#endif /* ACCSENSOR_H_ */

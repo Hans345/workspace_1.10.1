@@ -1,0 +1,20 @@
+/*
+ * AccGyroSensor.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef ACCGYROSENSOR_H_
+#define ACCGYROSENSOR_H_
+
+#include "IKS01A3Motion.h"
+
+class AccGyroSensor {
+public:
+	IKS01A3_Motion Acc; //Composition
+	AccGyroSensor();
+	virtual ~AccGyroSensor();
+};
+
+#endif /* ACCGYROSENSOR_H_ */
