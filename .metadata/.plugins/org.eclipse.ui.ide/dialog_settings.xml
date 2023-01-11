@@ -16,6 +16,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Blinky_Delay_not_Blocking"/>
 			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\Solution\2022_embreal_part1"/>
 			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_Template"/>
 			<item value="C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\CPP_autoconsole"/>
