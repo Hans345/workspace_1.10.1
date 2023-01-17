@@ -49,8 +49,16 @@ void SpiritLevelSignelAxis3LED::show(void) {
 			ledNegAngle.unsetLED();
 			ledBalanced.setLED();
 			ledPosAngle.unsetLED();
+
 		}
 	}
+#ifdef COUT
+    std::cout<<"YAxisValue = "<< AccAvgYAxis << (char) ASCII_TAB;
+    std::cout<< (char) ASCII_LF << (char) ASCII_CR;
+    fflush(stdout);
+#else
+	printf("YAxisValue = %d\n",(int)AccAvgYAxis);
+#endif
 }
 
 void SpiritLevelSignelAxis3LED::setZero(void) {

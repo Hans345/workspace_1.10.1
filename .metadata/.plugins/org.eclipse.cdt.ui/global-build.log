@@ -1,22 +1,42 @@
-20:36:32 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
+12:08:04 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../X-CUBE-MEMS1/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ "../CPP_Core/Src/SpiritLevelSignelAxis3LED.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../X-CUBE-MEMS1/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -I"C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP_Core/Src/SpiritLevelSignelAxis3LED.d" -MT"CPP_Core/Src/SpiritLevelSignelAxis3LED.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "CPP_Core/Src/SpiritLevelSignelAxis3LED.o"
+arm-none-eabi-size   EP_CPP_IKS01A3_SpitirLevel.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 208256	   1304	   9784	 219344	  358d0	EP_CPP_IKS01A3_SpitirLevel.elf
+Finished building: default.size.stdout
+ 
+12:08:20 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
+make -j8 all 
+arm-none-eabi-size   EP_CPP_IKS01A3_SpitirLevel.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 208256	   1304	   9784	 219344	  358d0	EP_CPP_IKS01A3_SpitirLevel.elf
+Finished building: default.size.stdout
+ 
+12:10:29 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCOUT -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../X-CUBE-MEMS1/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "EP_CPP_IKS01A3_SpitirLevel.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_SpitirLevel\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_IKS01A3_SpitirLevel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: EP_CPP_IKS01A3_SpitirLevel.elf
  
 arm-none-eabi-size   EP_CPP_IKS01A3_SpitirLevel.elf 
 arm-none-eabi-objdump -h -S  EP_CPP_IKS01A3_SpitirLevel.elf  > "EP_CPP_IKS01A3_SpitirLevel.list"
    text	   data	    bss	    dec	    hex	filename
-  48988	    660	   3820	  53468	   d0dc	EP_CPP_IKS01A3_SpitirLevel.elf
+ 208256	   1304	   9784	 219344	  358d0	EP_CPP_IKS01A3_SpitirLevel.elf
 Finished building: default.size.stdout
  
 Finished building: EP_CPP_IKS01A3_SpitirLevel.list
  
-20:36:37 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
+12:12:14 **** Incremental Build of configuration Debug for project EP_CPP_IKS01A3_SpitirLevel ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCOUT -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../X-CUBE-MEMS1/Target -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/lsm6dso -I../Drivers/BSP/Components/lis2dw12 -I../Drivers/BSP/Components/lis2mdl -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hh -I../Drivers/BSP/Components/stts751 -I../Drivers/BSP/IKS01A3 -I../Drivers/BSP/Components/Common -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "EP_CPP_IKS01A3_SpitirLevel.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3_SpitirLevel\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EP_CPP_IKS01A3_SpitirLevel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: EP_CPP_IKS01A3_SpitirLevel.elf
+ 
 arm-none-eabi-size   EP_CPP_IKS01A3_SpitirLevel.elf 
+arm-none-eabi-objdump -h -S  EP_CPP_IKS01A3_SpitirLevel.elf  > "EP_CPP_IKS01A3_SpitirLevel.list"
    text	   data	    bss	    dec	    hex	filename
-  48988	    660	   3820	  53468	   d0dc	EP_CPP_IKS01A3_SpitirLevel.elf
+ 208256	   1304	   9784	 219344	  358d0	EP_CPP_IKS01A3_SpitirLevel.elf
 Finished building: default.size.stdout
+ 
+Finished building: EP_CPP_IKS01A3_SpitirLevel.list
  

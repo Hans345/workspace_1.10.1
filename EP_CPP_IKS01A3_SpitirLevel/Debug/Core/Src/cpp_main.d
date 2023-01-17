@@ -34,6 +34,8 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/SpiritLevelSignelAxis3LED.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_ring_allocator.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_alignas.h \
  ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h \
  ../X-CUBE-MEMS1/Target/iks01a3_conf.h ../Core/Inc/stm32f7xx_nucleo_bus.h \
  ../Core/Inc/stm32f7xx_nucleo_conf.h ../Core/Inc/stm32f7xx_nucleo_errno.h \
@@ -83,6 +85,8 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/SpiritLevelSignelAxis3LED.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_ring_allocator.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_alignas.h:
 ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h:
 ../X-CUBE-MEMS1/Target/iks01a3_conf.h:
 ../Core/Inc/stm32f7xx_nucleo_bus.h:

@@ -3,6 +3,8 @@ CPP_Core/Src/SpiritLevelSignelAxis3LED.o: \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/SpiritLevelSignelAxis3LED.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_ring_allocator.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_alignas.h \
  ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h \
  ../X-CUBE-MEMS1/Target/iks01a3_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
@@ -51,6 +53,8 @@ CPP_Core/Src/SpiritLevelSignelAxis3LED.o: \
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/SpiritLevelSignelAxis3LED.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/AccGyroSensor.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/IKS01A3Motion.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_ring_allocator.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EP_CPP_IKS01A3_SpitirLevel/CPP_Core/Inc/util_alignas.h:
 ../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h:
 ../X-CUBE-MEMS1/Target/iks01a3_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:

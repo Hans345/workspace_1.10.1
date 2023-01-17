@@ -47,19 +47,32 @@ void IKS01A3_Motion::updateValues(uint32_t instance, uint32_t function) {
 
     IKS01A3_MOTION_SENSOR_GetAxes(instance, function, &CurrentAxisValues);
 
-    // Fill Buffer's
-    std::rotate(RingBufferAxisX.begin(),RingBufferAxisX.begin()+1,RingBufferAxisX.end());
-    RingBufferAxisX[5]=CurrentAxisValues.x;
+    #ifdef STD_ARRAY
+    	// Fill array Buffer's
+        std::rotate(RingBufferAxisX.begin(),RingBufferAxisX.begin()+1,RingBufferAxisX.end());
+        RingBufferAxisX[BUFFERSIZE-1]=CurrentAxisValues.x;
 
-    std::rotate(RingBufferAxisY.begin(),RingBufferAxisY.begin()+1,RingBufferAxisY.end());
-    RingBufferAxisY[5]=CurrentAxisValues.y;
+        std::rotate(RingBufferAxisY.begin(),RingBufferAxisY.begin()+1,RingBufferAxisY.end());
+        RingBufferAxisY[BUFFERSIZE-1]=CurrentAxisValues.y;
 
-    std::rotate(RingBufferAxisZ.begin(),RingBufferAxisZ.begin()+1,RingBufferAxisZ.end());
-    RingBufferAxisZ[5]=CurrentAxisValues.z;
+        std::rotate(RingBufferAxisZ.begin(),RingBufferAxisZ.begin()+1,RingBufferAxisZ.end());
+        RingBufferAxisZ[BUFFERSIZE-1]=CurrentAxisValues.z;
 
-    // Make Average of Buffer's
+    #else
+        std::basic_string<char,std::char_traits<char>,util::ring_allocator<char>> MyStringObj;
+        // Fill vector Buffer's
+        if(RingBufferAxisX.size()>BUFFERSIZE-1){RingBufferAxisX.erase(RingBufferAxisX.begin());}
+        RingBufferAxisX.push_back(CurrentAxisValues.x);
+        if(RingBufferAxisY.size()>BUFFERSIZE-1){RingBufferAxisY.erase(RingBufferAxisY.begin());}
+        RingBufferAxisY.push_back(CurrentAxisValues.y);
+		if(RingBufferAxisZ.size()>BUFFERSIZE-1){RingBufferAxisZ.erase(RingBufferAxisZ.begin());}
+		RingBufferAxisZ.push_back(CurrentAxisValues.z);
+
+    #endif
+
+    // Create mean Value's
     AxisValues.x = std::accumulate(RingBufferAxisX.begin(), RingBufferAxisX.end(), 0LL) / RingBufferAxisX.size();
-    AxisValues.y = std::accumulate(RingBufferAxisY.begin(), RingBufferAxisY.end(), 0LL) / RingBufferAxisY.size();
+    AxisValues.y= std::accumulate(RingBufferAxisY.begin(), RingBufferAxisY.end(), 0LL) / RingBufferAxisY.size();
     AxisValues.z = std::accumulate(RingBufferAxisZ.begin(), RingBufferAxisZ.end(), 0LL) / RingBufferAxisZ.size();
 }
 

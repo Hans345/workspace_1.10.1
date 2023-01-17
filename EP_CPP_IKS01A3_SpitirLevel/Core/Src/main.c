@@ -82,7 +82,8 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/*int __io_putchar(int ch)
+#ifdef COUT
+int __io_putchar(int ch)
 {
     uint8_t c[1];
     c[0] = ch & 0x00FF;
@@ -94,7 +95,8 @@ int _write(int file,char *ptr, int len)
 {
     HAL_UART_Transmit(&huart3, (uint8_t *)ptr, len, HAL_MAX_DELAY);
     return len;
-}*/
+}
+#else // printf() with Window/Show View/SWV/Data Console (Configure Bit 0)
 int _write(int file, char *ptr, int len)
 {
  int DataIdx;
@@ -105,6 +107,7 @@ int _write(int file, char *ptr, int len)
   }
   return len;
 }
+#endif
 /* USER CODE END 0 */
 
 /**
@@ -371,6 +374,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(USB_OverCurrent_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 
