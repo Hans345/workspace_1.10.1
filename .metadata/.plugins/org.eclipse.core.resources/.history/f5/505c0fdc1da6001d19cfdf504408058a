@@ -1,0 +1,29 @@
+/*
+ * cpp_main.h
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef INC_CPP_MAIN_H_
+#define INC_CPP_MAIN_H_
+
+// Includes
+#include <iostream>		//For std::cout
+//defines
+#define ASCII_TAB 	(0x09)
+#define ASCII_LF 	(0x0A)
+#define ASCII_CR	(0x0D)
+
+#pragma once
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void cpp_main();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* INC_CPP_MAIN_H_ */

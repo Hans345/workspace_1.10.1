@@ -1,0 +1,17 @@
+/*
+ * Test.h
+ *
+ *  Created on: Feb 6, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef SRC_TEST_H_
+#define SRC_TEST_H_
+
+class Test {
+public:
+	Test();
+	virtual ~Test();
+};
+
+#endif /* SRC_TEST_H_ */

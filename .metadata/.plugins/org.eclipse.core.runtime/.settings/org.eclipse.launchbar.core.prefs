@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RunConfig_CM7,org.eclipse.launchbar.core.descriptorType.default\:Lauch_Configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RunConfig_CM4,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3_SpitirLevel
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RunConfig_CM7,org.eclipse.launchbar.core.descriptorType.default\:Lauch_Configuration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RunConfig_CM4,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EmbReal_Ex_Baumeler_Raphael,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3_SpitirLevel,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EmbReal_Ex_Baumeler_Raphael (1)
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CPP_Blinky_Delay_not_Blocking\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CPP_Blinky_Delay_not_Blocking\ Debug/activeLaunchTarget=null\:---
@@ -20,7 +20,9 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:C_Blinky_Delay_not_Blocking1/ac
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3_ArrayAvg\ (1)/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3_SpitirLevel/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_IKS01A3_SpitirLevel2\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EP_CPP_autoconsole\ (1)/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EmbReal_Ex_Baumeler_Raphael\ (1)/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Empty_CPP_Project/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Empty_CPP_Project/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Example_IKS01A3_DataLogTerminal\ Debug/activeLaunchMode=debug

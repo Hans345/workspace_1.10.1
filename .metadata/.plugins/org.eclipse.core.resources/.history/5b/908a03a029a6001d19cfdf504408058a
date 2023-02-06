@@ -1,0 +1,20 @@
+/*
+ * Test.cpp
+ *
+ *  Created on: Feb 6, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "Test.h"
+
+Test::Test() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Test::~Test() {
+	// TODO Auto-generated destructor stub
+}
+
+int Test::test(void) {
+}

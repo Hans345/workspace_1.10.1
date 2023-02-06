@@ -1,0 +1,35 @@
+/*
+ * cpp_main.cpp
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+
+// Includes
+#include "cpp_main.h"
+#include "main.h"		//For. HAL-Functions
+#include "stm32f7xx_hal_gpio.h"
+#include <iostream>		//For std::cout
+#include <iomanip>		//For std::left
+
+// Defines
+#define ASCII_TAB 	(0x09)
+#define ASCII_LF 	(0x0A)
+#define ASCII_CR	(0x0D)
+
+void cpp_main(){
+	// Output to console
+	int a = 1;
+	std::cout<<std::left<< "\033c" << std::endl;
+	std::cout<<std::left<< "----------------------------------------------------------------------"<<std::endl;
+	std::cout<<std::left<<"a = "<< a << std::endl;
+	std::cout<<std::left<<"CPP-Main started! "<< std::endl;
+	//fflush(stdout);
+
+	while (1)
+		{
+			HAL_Delay(100);
+		}
+}
+
+

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="&quot;C:\Users\raphael.baumeler\STM32CubeIDE\workspace_1.10.1\EP_CPP_IKS01A3\Core_CPP\Inc&quot;"/>
 	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
 	<item key="LastUsedHeaderTemplate" value="Default C++ header template"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="STD_MAP"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -68,5 +68,16 @@
 	<section name="RenameInformationPopup">
 	</section>
 	<section name="CRenameRefactoringInputPage">
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="true"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="*function"/>
+			<item value="function"/>
+			<item value="MyStringObj"/>
+			<item value="IKS01A3_Motion"/>
+			<item value="STD_ARRAY"/>
+		</list>
 	</section>
 </section>
