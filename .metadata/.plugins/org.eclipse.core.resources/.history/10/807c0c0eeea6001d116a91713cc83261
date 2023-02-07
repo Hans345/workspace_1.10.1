@@ -1,0 +1,26 @@
+/*
+ * InternalTemperature.cpp
+ *
+ *  Created on: Feb 7, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "InternalTemperature.h"
+
+InternalTemperature::InternalTemperature() {
+	// TODO Auto-generated constructor stub
+
+}
+
+InternalTemperature::~InternalTemperature() {
+	// TODO Auto-generated destructor stub
+}
+
+float InternalTemperature::getMin() {
+
+}
+
+void InternalTemperature::aquireNStoreTemperature(float value) {
+    if(MeasValues.size()>BUFFERSIZE-1){MeasValues.erase(MeasValues.begin());}
+    MeasValues.push_back(value);
+}

@@ -1,0 +1,17 @@
+/*
+ * sub1.h
+ *
+ *  Created on: Feb 6, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef SUB1_H_
+#define SUB1_H_
+
+class sub1 {
+public:
+	sub1();
+	virtual ~sub1();
+};
+
+#endif /* SUB1_H_ */

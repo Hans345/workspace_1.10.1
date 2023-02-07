@@ -1,0 +1,3 @@
+../CPP_Core/Base2.cpp:10:1:base2::base2()	16	static
+../CPP_Core/Base2.cpp:15:1:base2::~base2()	16	static
+../CPP_Core/Base2.cpp:15:1:virtual base2::~base2()	16	static

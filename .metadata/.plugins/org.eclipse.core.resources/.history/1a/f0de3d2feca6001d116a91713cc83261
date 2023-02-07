@@ -1,0 +1,17 @@
+/*
+ * InternalTemperature.h
+ *
+ *  Created on: Feb 7, 2023
+ *      Author: raphael.baumeler
+ */
+
+#ifndef INTERNALTEMPERATURE_H_
+#define INTERNALTEMPERATURE_H_
+
+class InternalTemperature {
+public:
+	InternalTemperature();
+	virtual ~InternalTemperature();
+};
+
+#endif /* INTERNALTEMPERATURE_H_ */

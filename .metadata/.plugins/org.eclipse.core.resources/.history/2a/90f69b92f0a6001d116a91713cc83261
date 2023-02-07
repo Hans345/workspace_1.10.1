@@ -1,0 +1,44 @@
+/*
+ * cpp_main.cpp
+ *
+ *  Created on: Jan 11, 2023
+ *      Author: raphael.baumeler
+ */
+// My Code starts here
+// Includes
+#include "cpp_main.h"
+#include "main.h"					//For. HAL-Functions
+#include "stm32f7xx_hal_gpio.h"
+#include <iostream>					//For std::cout
+#include "util_ring_allocator.h" 	//For util::ring_allocator<>
+#include <numeric>					//For std::accumulate()
+#include <vector>
+#include "InternalTemperature.h"
+
+// Defines
+#define ASCII_TAB 	(0x09)
+#define ASCII_LF 	(0x0A)
+#define ASCII_CR	(0x0D)
+
+// Global Variables
+InternalTemperature temp;
+
+void cpp_main(){
+	// Output to console
+	int a = 1;
+	std::cout<< "\033c" << (char) ASCII_LF<<(char) ASCII_CR;
+	std::cout<< "----------------------------------------------------------------------"<<(char) ASCII_LF<<(char) ASCII_CR;
+	std::cout<<"a = "<< a << (char) ASCII_LF<<(char) ASCII_CR;
+	std::cout<<"CPP-Main started! "<< (char) ASCII_LF<<(char) ASCII_CR;
+	fflush(stdout);
+
+	while (1)
+		{
+	        temp.aquireNStoreTemperature();
+	        HAL_Delay(100);
+			HAL_GPIO_TogglePin(LD1_Green_GPIO_Port, LD1_Green_Pin);
+		}
+}
+// My Code ends here
+
+

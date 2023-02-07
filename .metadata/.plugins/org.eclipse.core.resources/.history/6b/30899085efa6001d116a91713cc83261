@@ -1,0 +1,44 @@
+/*
+ * InternalTemperature.cpp
+ *
+ *  Created on: Feb 7, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "InternalTemperature.h"
+
+InternalTemperature::InternalTemperature() {
+	// TODO Auto-generated constructor stub
+
+}
+
+InternalTemperature::~InternalTemperature() {
+	// TODO Auto-generated destructor stub
+}
+
+float InternalTemperature::getMin() {
+    if(currValue<prevValue){
+    	min = currValue;
+    	prevValue = currValue;
+    }
+}
+
+float InternalTemperature::getAvg() {
+    avg = std::accumulate(MeasValues.begin(), MeasValues.end(), 0LL) / MeasValues.size();
+}
+
+float InternalTemperature::getMax() {
+    if(currValue>prevValue){
+    	max = currValue;
+    	prevValue = currValue;
+    }
+}
+
+void InternalTemperature::aquireNStoreTemperature(float value) {
+    if(MeasValues.size()>BUFFERSIZE-1){MeasValues.erase(MeasValues.begin());}
+    MeasValues.push_back(value);
+    currValue = value;
+}
+
+void InternalTemperature::calcMinMaxAvg() {
+}

@@ -19,6 +19,8 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
@@ -32,7 +34,9 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h \
  C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_ring_allocator.h \
- C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_alignas.h
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_alignas.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/InternalTemperature.h \
+ C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_ring_allocator.h
 ../Core/Inc/cpp_main.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
@@ -55,6 +59,8 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
@@ -69,3 +75,5 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_ring_allocator.h:
 C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_alignas.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/InternalTemperature.h:
+C:/Users/raphael.baumeler/STM32CubeIDE/workspace_1.10.1/EmbReal_Ex_Baumeler_Raphael/CPP_Core/Inc/util_ring_allocator.h:

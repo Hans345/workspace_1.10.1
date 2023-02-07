@@ -1,0 +1,31 @@
+/*
+ * InternalTemperature.cpp
+ *
+ *  Created on: Feb 7, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "InternalTemperature.h"
+
+InternalTemperature::InternalTemperature() {
+	// TODO Auto-generated constructor stub
+
+}
+
+InternalTemperature::~InternalTemperature() {
+	// TODO Auto-generated destructor stub
+}
+
+float InternalTemperature::getMin() {
+    auto itr_min = StatsAxisX.find("Min");
+    *XAxis= itr_min->second;
+    itr_min = StatsAxisY.find("Min");
+    *YAxis= itr_min->second;
+    itr_min = StatsAxisZ.find("Min");
+    *ZAxis= itr_min->second;
+}
+
+void InternalTemperature::aquireNStoreTemperature(float value) {
+    if(MeasValues.size()>BUFFERSIZE-1){MeasValues.erase(MeasValues.begin());}
+    MeasValues.push_back(value);
+}

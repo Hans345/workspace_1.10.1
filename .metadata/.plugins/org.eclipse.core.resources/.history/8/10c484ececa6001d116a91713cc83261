@@ -1,0 +1,18 @@
+/*
+ * InternalTemperature.cpp
+ *
+ *  Created on: Feb 7, 2023
+ *      Author: raphael.baumeler
+ */
+
+#include "InternalTemperature.h"
+
+InternalTemperature::InternalTemperature() {
+	// TODO Auto-generated constructor stub
+
+}
+
+InternalTemperature::~InternalTemperature() {
+	// TODO Auto-generated destructor stub
+}
+
